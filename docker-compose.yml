@@ -1,0 +1,46 @@
+services:
+  app:
+    build: .
+    image: logistics-kb-rag:local
+    container_name: logistics-kb-rag
+    ports:
+      - "8000:8000"
+    environment:
+      # 默认离线：哈希向量 + 抽取式回答
+      LLM_PROVIDER: mock
+      EMBED_PROVIDER: hash
+      RERANK_PROVIDER: heuristic
+      KB_DB_PATH: /app/data/kb.sqlite3
+      LOG_LEVEL: INFO
+      # 切真实模型时在这里追加：
+      # LLM_PROVIDER: http
+      # LLM_API_BASE: https://api.deepseek.com/v1
+      # LLM_API_KEY: ${LLM_API_KEY}
+      # LLM_MODEL: deepseek-chat
+      # EMBED_PROVIDER: http
+      # EMBED_API_BASE: https://dashscope.aliyuncs.com/compatible-mode/v1
+      # EMBED_API_KEY: ${EMBED_API_KEY}
+      # EMBED_MODEL: text-embedding-v4
+    volumes:
+      - kb_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  kb_data:
+
+# pgvector 变体（当前代码不直接支持，需把 SQLiteStore 换成 Postgres 实现）：
+#
+#   postgres:
+#     image: pgvector/pgvector:pg16
+#     environment:
+#       POSTGRES_DB: logistics_kb
+#       POSTGRES_USER: kb
+#       POSTGRES_PASSWORD: change-me
+#     volumes:
+#       - pg_data:/var/lib/postgresql/data
+#
+# 切换到 Postgres 后建议：
+#   1. chunks.embedding 用 vector(1024) 存储，建立 HNSW 索引；
+#   2. 向量检索下推到 SQL，Python 只负责 RRF 与重排；
+#   3. BM25 使用 pg_search / tsvector 或继续使用本地索引；
+#   4. 入库仍保留 documents.content_hash 的唯一约束做幂等。
