@@ -1,0 +1,20 @@
+{"id": "q01", "question": "退货验收通过后，退款多久能到账？", "expected_source": "01-售后与退货政策.md", "key_points": ["1 至 3 个工作日", "对公转账 3 至 5 个工作日"]}
+{"id": "q02", "question": "七天无理由退货的退回运费由谁承担？", "expected_source": "01-售后与退货政策.md", "key_points": ["客户承担退回运费", "发货运费不退"]}
+{"id": "q03", "question": "仓库签收退货后要在多久内完成验收？", "expected_source": "01-售后与退货政策.md", "key_points": ["2 个工作日", "最长可延长 1 个工作日"]}
+{"id": "q04", "question": "客户寄回退货商品有几天期限？", "expected_source": "01-售后与退货政策.md", "key_points": ["7 个自然日", "大件商品 10 个自然日"]}
+{"id": "q05", "question": "省内快递的首重和续重价格是多少？", "expected_source": "02-运费与时效说明.md", "key_points": ["首重 8 元", "续重 2 元/千克"]}
+{"id": "q06", "question": "标准快递的体积重怎么计算？", "expected_source": "02-运费与时效说明.md", "key_points": ["长 × 宽 × 高", "÷ 6000"]}
+{"id": "q07", "question": "跨省主要城市一般几个工作日送达？", "expected_source": "02-运费与时效说明.md", "key_points": ["3 至 5 个工作日"]}
+{"id": "q08", "question": "物流延误的赔偿标准是什么？", "expected_source": "02-运费与时效说明.md", "key_points": ["10%", "不超过运费的 50%", "超过承诺时效 2 个工作日"]}
+{"id": "q09", "question": "月结客户的账期和对账时限分别是多久？", "expected_source": "02-运费与时效说明.md", "key_points": ["30 个自然日", "5 个工作日"]}
+{"id": "q10", "question": "货物破损后要在多长时间内报备并提交材料？", "expected_source": "03-货物破损理赔流程.md", "key_points": ["48 小时", "7 个自然日", "隐蔽性破损 3 个自然日"]}
+{"id": "q11", "question": "申请货物破损理赔需要准备哪些材料？", "expected_source": "03-货物破损理赔流程.md", "key_points": ["运单号", "包装六面照片", "价值证明", "索赔函"]}
+{"id": "q12", "question": "未保价货物的最高赔付金额是多少？", "expected_source": "03-货物破损理赔流程.md", "key_points": ["运费的 3 倍", "1000 元"]}
+{"id": "q13", "question": "易碎品破损时赔付比例怎么确定？", "expected_source": "03-货物破损理赔流程.md", "key_points": ["包装合格赔付 70%", "包装不合格降至 30%"]}
+{"id": "q14", "question": "下单后修改收货地址有什么限制？", "expected_source": "04-常见问题FAQ.md", "key_points": ["派送前可修改一次", "可能产生中转费", "跨计费区域需重新核算运费"]}
+{"id": "q15", "question": "发票怎么开，多久能开出来？", "expected_source": "04-常见问题FAQ.md", "key_points": ["电子普通发票 1 个工作日", "增值税专用发票 3 个工作日"]}
+{"id": "q16", "question": "保价费怎么收取？", "expected_source": "04-常见问题FAQ.md", "key_points": ["声明价值的 0.5%", "最低 1 元"]}
+{"id": "q17", "question": "客户拒收货物后运费由谁承担？", "expected_source": "04-常见问题FAQ.md", "key_points": ["无理由拒收由客户承担", "破损、错发由迅达物流承担"]}
+{"id": "q18", "question": "国际海运整柜到鹿特丹的清关流程是什么？", "expected_source": null, "key_points": []}
+{"id": "q19", "question": "生鲜冷链运输的温控区间是多少度？", "expected_source": null, "key_points": []}
+{"id": "q20", "question": "欧洲增值税递延需要提交哪些海关编码？", "expected_source": null, "key_points": []}
